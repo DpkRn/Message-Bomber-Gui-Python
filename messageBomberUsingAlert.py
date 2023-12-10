@@ -7,7 +7,7 @@ while(rb.confirm('Have You Placed Your Cursor At Your Place:',title="Deepak Aski
 msg=rb.prompt("Enter Your Message:",title="To Cancel,Press cancel button Anytime",default='')
 if msg!='' and msg!=None:  
     no=rb.prompt("Enter Number of times you Want to Send:",title="To Cancel,Press cancel button Anytime",default='')
-    if no!='' and type(no)==int and no!=None:
+    if no!='' and type(no)!=int and no!=None:
         for i in range(0,int(no)):
             rb.write(msg)
             rb.press("enter")
